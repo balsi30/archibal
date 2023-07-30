@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archibal P. Biongcog</title>
+    <!-- Add your CSS styles here (or use a separate CSS file) -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Style the navigation bar */
+        .nav-pills {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #007bff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        .nav-link.active {
+            background-color: #fff;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navigation bar -->
+   <ul class="nav nav-pills nav-fill" id="pillNav2">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+
+  <div class="container mt-4">
+    <div class="tab-content" id="pillsContent">
+       <!-- Inside the "Home" content section -->
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab2">
+        <!-- Add margins to the "Home" content -->
+        <div style="margin: 20px;">
+            <h1>Welcome to Archibal P. Biongcog's Portfolio</h1>
+            <img src="balsi.jpg" alt="Archibal P. Biongcog - Profile Picture" style="margin-bottom: 10px;">
+            <!-- Add more content if desired -->
+            
+        </div>
+    </div>
+            <h2>Profile</h2>
+            <!-- Add your profile information here -->
+        </div>
+        <!-- Contact content -->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab2">
+            <h2>Contact</h2>
+            <!-- Add your contact information and contact form here -->
+        </div>
+    </div>
+  </div>
+
+  <!-- Optional: Add Bootstrap and JavaScript dependencies if needed -->
+  <!-- You can include Bootstrap from a CDN or download and host locally -->
+  <!-- For example: -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>
